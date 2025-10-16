@@ -1,0 +1,23 @@
+
+#title{
+    color: blueviolet;
+    font-family: monospace;
+}
+
+.intro{
+    color: green;
+
+}
+
+
+.card p:first-child{
+    color: peru;
+}
+
+.container div  p{
+    color: brown;
+}
+
+h2 ~  p{
+    color: yellowgreen;
+}
