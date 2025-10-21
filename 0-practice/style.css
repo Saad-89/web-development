@@ -3,17 +3,23 @@
 .container{
     background-color: blueviolet;
     height: 300px;
-    max-width: 700px;
   
+  
+}
+
+@media (max-width : 900px) {
+    .container{
+    background-color: hotpink;
+    height: 300px;
+  
+  
+}
+    
 }
 p{
     text-align: justify;
     background-color: aqua;
     text-transform: capitalize;
-    text-indent: 50px;
-    letter-spacing: 5px;
-     white-space: nowrap;
-     line-height: 2.8;
-       word-spacing: 10px;
-        text-shadow: 2px 2px;
+ 
+      
 }
