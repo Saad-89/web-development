@@ -1,92 +1,193 @@
- * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
 
-        .main-container {
-            display: grid;
-            grid-template-columns: repeat(4, 250px); /* 4 equal columns */
-            grid-template-rows: repeat(4, 220px);    /* 4 equal rows */
-            gap: 20px;
-            max-width: 1200px;
-        }
+@font-face {
+  font-family: 'DMSans';
+  src: url('./assets/fonts/static/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-        .grid-item {
-            border-radius: 16px;
-            padding: 20px;
-            color: #333;
-            font-family: Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
 
-        /* Container 1: Top-left beige (2 rows = equal to container 6) */
-        .grid-1 {
-            background-color: #F5E6D3;
-            grid-column: 1 / 2;
-            grid-row: 1 / 3;  /* Rows 1-2 */
-        }
+body{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
 
-        /* Container 2: Top-center purple (spans 2 columns) */
-        .grid-2 {
-            background-color: #7C5FDC;
-            color: white;
-            grid-column: 2 / 4;  /* Spans columns 2-3 */
-            grid-row: 1 / 2;
-        }
+}
 
-        /* Container 3: Top-right light purple (2 rows) */
-        .grid-3 {
-            background-color: #D4C5F9;
-            grid-column: 4 / 5;
-            grid-row: 1 / 3;  /* Rows 1-2 */
-        }
+.main-container{
 
-        /* Container 4: Middle-row white box */
-        .grid-4 {
-            background-color: #FFFFFF;
-            border: 1px solid #e0e0e0;
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-        }
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(4, 250px);
+    gap: 1.5rem;
+    padding: 2rem;
+}
 
-        /* Container 5: Middle-row yellow box */
-        .grid-5 {
-            background-color: #F5D76E;
-            grid-column: 3 / 4;
-            grid-row: 2 / 3;
-        }
+.grid-item{
+   border-radius: 10px;
+}
 
-        /* Container 6: Bottom-left yellow (2 rows = equal to container 1) */
-        .grid-6 {
-            background-color: #F5D76E;
-            grid-column: 1 / 2;
-            grid-row: 3 / 5;  /* Rows 3-4 (EQUAL height to grid-1) */
-        }
+.grid-1{
+    grid-row: 1 / 3 ;
+    background-color: hsl(31, 66%, 93%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
 
-        /* Container 7: Bottom-middle white box */
-        .grid-7 {
-            background-color: #FFFFFF;
-            border: 1px solid #e0e0e0;
-            grid-column: 2 / 3;
-            grid-row: 3 / 4;
-        }
+.grid-1 p {
+    font-family: 'DMSans';
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+}
 
-        /* Container 8: Bottom-right purple (spans 2 columns, 2 rows) */
-        .grid-8 {
-            background-color: #7C5FDC;
-            color: white;
-            grid-column: 3 / 5;  /* Spans columns 3-4 */
-            grid-row: 3 / 4;     /* Spans rows 3-4 */
-        }
+.grid-1 img{
+    width: 15rem;
+    height: 8rem;
+}
+
+.grid-1 span{
+    color: hsl(256, 67%, 59%);
+    font-style: italic;
+}
+
+.grid-2{
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  background-color: hsl(256, 67%, 59%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid-2-title {
+     font-family: 'DMSans';
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+
+}
+
+.grid-2-text{
+      font-family: 'DMSans';
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 100;
+    color: rgb(209, 208, 208);
+
+}
+.grid-2 span{
+     font-family: 'DMSans';
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+    color: hsl(39, 100%, 71%);
+    font-style: italic;
+
+}
+
+.grid-3{
+    grid-row: 1 / 4;
+    background-color: hsl(254, 88%, 90%);
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+     position: relative;
+     overflow: hidden;
+}
+
+.grid-3-title {
+     font-family: 'DMSans';
+    font-size: 2.3rem;
+ 
+    font-weight: 800;
+    color: black;
+     position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 48px;
+   
+
+}
+
+.grid-3-text{
+      font-family: 'DMSans';
+    font-size: 1.2rem;
+    text-align: start;
+    font-weight: 400;
+    color: black;
+    
+    position: absolute;
+    z-index: 2;
+     bottom: 100px;
+    left: 48px;
+
+}
+
+
+.grid-3 img{
+    width: 25rem;
+    height: 20rem;
+    position: absolute;
+    left: 48px;
+  
+   
+}
+
+
+.grid-4{
+    grid-row: 3 / 5;
+    background-color: hsl(39, 100%, 71%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+   
+    
+}
+
+.grid-4 p {
+    font-family: 'DMSans';
+    font-size: 3rem;
+    text-align: start;
+    font-weight: 800;
+
+}
+
+.grid-4 img{
+    width: 17rem;
+    height: 15rem;
+    padding-top: 15px;
+}
+
+
+.grid-5{
+    background-color: hsl(0, 0%, 100%);
+}
+.grid-6{
+    background-color: hsl(39, 100%, 71%);
+}
+.grid-7{
+     background-color: hsl(0, 0%, 100%);
+}
+
+.grid-8{
+    grid-column: 3/5;
+     background-color: hsl(256, 67%, 59%);
+}
