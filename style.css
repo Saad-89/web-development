@@ -1,0 +1,92 @@
+ * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: repeat(4, 250px); /* 4 equal columns */
+            grid-template-rows: repeat(4, 220px);    /* 4 equal rows */
+            gap: 20px;
+            max-width: 1200px;
+        }
+
+        .grid-item {
+            border-radius: 16px;
+            padding: 20px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Container 1: Top-left beige (2 rows = equal to container 6) */
+        .grid-1 {
+            background-color: #F5E6D3;
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;  /* Rows 1-2 */
+        }
+
+        /* Container 2: Top-center purple (spans 2 columns) */
+        .grid-2 {
+            background-color: #7C5FDC;
+            color: white;
+            grid-column: 2 / 4;  /* Spans columns 2-3 */
+            grid-row: 1 / 2;
+        }
+
+        /* Container 3: Top-right light purple (2 rows) */
+        .grid-3 {
+            background-color: #D4C5F9;
+            grid-column: 4 / 5;
+            grid-row: 1 / 3;  /* Rows 1-2 */
+        }
+
+        /* Container 4: Middle-row white box */
+        .grid-4 {
+            background-color: #FFFFFF;
+            border: 1px solid #e0e0e0;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        /* Container 5: Middle-row yellow box */
+        .grid-5 {
+            background-color: #F5D76E;
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+
+        /* Container 6: Bottom-left yellow (2 rows = equal to container 1) */
+        .grid-6 {
+            background-color: #F5D76E;
+            grid-column: 1 / 2;
+            grid-row: 3 / 5;  /* Rows 3-4 (EQUAL height to grid-1) */
+        }
+
+        /* Container 7: Bottom-middle white box */
+        .grid-7 {
+            background-color: #FFFFFF;
+            border: 1px solid #e0e0e0;
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+
+        /* Container 8: Bottom-right purple (spans 2 columns, 2 rows) */
+        .grid-8 {
+            background-color: #7C5FDC;
+            color: white;
+            grid-column: 3 / 5;  /* Spans columns 3-4 */
+            grid-row: 3 / 4;     /* Spans rows 3-4 */
+        }
