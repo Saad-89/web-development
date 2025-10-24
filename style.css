@@ -23,11 +23,13 @@ body{
 .main-container{
 
     display: grid;
-    grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(4, 250px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 1.5rem;
     padding: 2rem;
 }
+
+
 
 .grid-item{
    border-radius: 10px;
@@ -167,27 +169,155 @@ body{
     font-size: 3rem;
     text-align: start;
     font-weight: 800;
+    padding-left: 5px;
 
 }
 
 .grid-4 img{
-    width: 17rem;
-    height: 15rem;
+    width: 16rem;
+    height: 16rem;
     padding-top: 15px;
 }
 
 
 .grid-5{
     background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+   
+    
 }
+
+.grid-5 p {
+    font-family: 'DMSans';
+    font-size: 2rem;
+    text-align: start;
+    font-weight: 800;
+   position: relative;
+    left: 20px;
+}
+
+.grid-5 img{
+    width: 24rem;
+    height: 6rem;
+    position: relative;
+    left: 60px;
+}
+
+
+
 .grid-6{
     background-color: hsl(39, 100%, 71%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  position: relative;
+  overflow: hidden;
+   
+    
 }
+
+.grid-6 p {
+    font-family: 'DMSans';
+    font-size: 2rem;
+    /* text-align: start; */
+    font-weight: 800;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+ 
+}
+
+.grid-6 img{
+    width: 16rem;
+    height: 12rem;
+    position: absolute;
+    bottom: -80px;
+
+}
+
 .grid-7{
      background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 20px;
+
+   
+    
+}
+
+.grid-7 .grid-7-title {
+    font-family: 'DMSans';
+    font-size: 4rem;
+    text-align: start;
+    font-weight: 800;
+    padding-bottom: 20px;
+ 
+ 
+}
+
+
+.grid-7 .grid-7-text {
+    font-family: 'DMSans';
+    font-size: 1rem;
+    text-align: start;
+    font-weight: 200;
+    padding-bottom: 20px;
+    color: rgb(127, 128, 130);
+
+ 
+ 
+}
+
+.grid-7 img{
+    width: 10rem;
+    height: 4rem;
+   
+
 }
 
 .grid-8{
     grid-column: 3/5;
      background-color: hsl(256, 67%, 59%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   
+    
+}
+
+.grid-8 p {
+    font-family: 'DMSans';
+    font-size: 2.5rem;
+    text-align: start;
+    font-weight: 800;
+    color: white;
+    width: 20vw;
+    padding-left: 20px;
+}
+
+.grid-8 img{
+  width: 60%;
+    height:70%;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }

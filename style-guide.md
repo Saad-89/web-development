@@ -36,19 +36,15 @@ The designs were created to the following widths:
 
 
 
-Html:
 
-
-
-  Manage multiple accounts and platforms.
-
-  Maintain a consistent posting schedule.
 
   
-  Grow followers with non-stop content.
 
-  >56% faster audience growth
   
-  Create and schedule content quicker.
 
-  Write your content using AI.
+  
+  
+
+  
+  
+  
