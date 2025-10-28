@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(246, 242, 237);
+    background-size: 40px 40px;
+    background-image:
+    linear-gradient(to right, rgb(224, 222, 222) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(224, 222, 222) 1px, transparent 1px);
+}
